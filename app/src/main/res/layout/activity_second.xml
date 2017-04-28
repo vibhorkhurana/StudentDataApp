@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/tvName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="20dp"
+        android:text="TextView"
+        android:layout_alignParentStart="true"
+        android:layout_toStartOf="@+id/tvPrnNo" />
+
+    <TextView
+        android:id="@+id/tvAge"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/tvName"
+        android:layout_marginTop="35dp"
+        android:text="TextView"
+        android:layout_alignEnd="@+id/tvName" />
+
+    <TextView
+        android:id="@+id/tvPhoneNo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="18dp"
+        android:text="TextView"
+        android:layout_below="@+id/tvGender"
+        android:layout_alignParentStart="true"
+        android:layout_alignEnd="@+id/tvGender" />
+
+    <TextView
+        android:id="@+id/tvGender"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="TextView"
+        android:layout_marginTop="14dp"
+        android:layout_below="@+id/tvAge"
+        android:layout_alignParentStart="true"
+        android:layout_alignEnd="@+id/tvAge" />
+
+    <TextView
+        android:id="@+id/tvEmailId"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/tvPhoneNo"
+        android:layout_below="@+id/tvPhoneNo"
+        android:layout_marginTop="39dp"
+        android:text="TextView"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:id="@+id/tvPrnNo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="TextView"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true" />
+
+    <ImageView
+        android:id="@+id/ivStImg"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/tvEmailId"
+        android:layout_alignParentEnd="true"
+        android:layout_below="@+id/tvPrnNo"
+        android:layout_toEndOf="@+id/tvPrnNo"
+        app:srcCompat="@mipmap/ic_launcher" />
+
+    <Button
+        android:id="@+id/btConfirm"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Confirm"
+        android:layout_marginTop="118dp"
+        android:layout_below="@+id/tvEmailId"
+        android:layout_centerHorizontal="true" />
+</RelativeLayout>

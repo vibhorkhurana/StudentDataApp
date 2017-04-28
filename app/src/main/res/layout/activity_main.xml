@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="cdac.in.studentdataapp.MainActivity"
+    android:weightSum="1">
+
+
+    <EditText
+        android:id="@+id/EdStName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="Name"
+        android:inputType="textPersonName"
+        android:layout_alignParentStart="true" />
+
+    <LinearLayout
+        android:layout_width="372dp"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/tvAgetxt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Age" />
+
+        <SeekBar
+            android:id="@+id/sbAge"
+            android:layout_width="223dp"
+            android:layout_height="wrap_content"
+            android:progress="100" />
+
+    </LinearLayout>
+
+    <RadioGroup
+        android:id="@+id/rdGen"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="21dp"
+        android:orientation="horizontal">
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/Male"
+            android:text="Male"
+            android:checked="true"/>
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/Female"
+            android:text="Female"/>
+    </RadioGroup>
+
+    <EditText
+        android:id="@+id/ecPrnNo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:ems="10"
+        android:hint="PRN Number"
+        android:inputType="textPersonName" />
+
+    <EditText
+        android:id="@+id/edEmlId"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="21dp"
+        android:ems="10"
+        android:hint="Email Id"
+        android:inputType="textEmailAddress" />
+
+    <EditText
+        android:id="@+id/edMobNo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:ems="10"
+        android:hint="Primary Mobile #"
+        android:inputType="phone" />
+
+    <TextView
+        android:id="@+id/tvCaptureIm"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="CaptureImage" />
+
+    <ImageButton
+        android:id="@+id/btimgCapture"
+        android:layout_width="118dp"
+        android:layout_height="wrap_content"
+        android:adjustViewBounds="false"
+        android:cropToPadding="false"
+        app:srcCompat="@android:drawable/ic_menu_camera"
+        android:layout_marginBottom="32dp"
+        android:layout_weight="0.40" />
+
+    <Button
+        android:id="@+id/btfnlSubmit"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Submit Button"
+        android:visibility="invisible" />
+
+
+</LinearLayout>
